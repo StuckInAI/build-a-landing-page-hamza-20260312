@@ -1,0 +1,142 @@
+.contact {
+  background: #ffffff;
+}
+
+.formWrap {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #f8f7ff;
+  border: 1px solid rgba(99, 102, 241, 0.12);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 0.625rem;
+  font-size: 0.9375rem;
+  color: #1a1a2e;
+  background: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  font-family: inherit;
+}
+
+.input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.inputError {
+  border-color: #ef4444;
+}
+
+.inputError:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.error {
+  font-size: 0.8125rem;
+  color: #ef4444;
+  font-weight: 500;
+}
+
+.errorBox {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 0.5rem;
+  padding: 0.875rem 1rem;
+  font-size: 0.9375rem;
+  color: #dc2626;
+}
+
+.submitBtn {
+  align-self: flex-start;
+  padding: 0.875rem 2.5rem;
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.successBox {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.successIcon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.successBox h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.successBox p {
+  font-size: 1rem;
+  color: #6b7280;
+  max-width: 400px;
+}
+
+@media (max-width: 640px) {
+  .formWrap {
+    padding: 1.5rem;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .submitBtn {
+    width: 100%;
+    text-align: center;
+  }
+}
